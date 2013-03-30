@@ -1,0 +1,6 @@
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Infrastructure\bin\Debug\CQRS.Infrastructure.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Infrastructure\bin\Debug\CQRS.Infrastructure.pdb
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Infrastructure\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Infrastructure\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Infrastructure\obj\Debug\CQRS.Infrastructure.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Infrastructure\obj\Debug\CQRS.Infrastructure.pdb

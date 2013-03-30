@@ -1,0 +1,31 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Views="clr-namespace:CQRS.WPFUI.Views"
+    xmlns:wpfui="clr-namespace:CQRS.WPFUI" x:Class="CQRS.WPFUI.MainWindow"
+    Title="MainWindow" Height="350" Width="450" Background="Black" Foreground="LightGreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock Text="VisitorId:"></TextBlock>
+            <TextBlock x:Name="visitorId"/>
+        </StackPanel>
+        <TabControl Grid.Row="1" Background="Black">
+            <!--<TabItem Header="Create Customer">
+                <Views:CreateCustomer />
+            </TabItem>-->
+            <TabItem Header="Create Product">
+                <Views:CreateProduct />
+            </TabItem>
+            <TabItem Header="Add Product to Card">
+                <Views:AddProductToShoppingCard />
+            </TabItem>
+            <TabItem Header="Card" ToolTip="Refreshs when tab focus state changed.">
+                <Views:ShoppingCard />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

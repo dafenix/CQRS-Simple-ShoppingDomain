@@ -1,0 +1,9 @@
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\bin\Debug\CQRS.Domain.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\bin\Debug\CQRS.Domain.pdb
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\bin\Debug\CQRS.Infrastructure.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\bin\Debug\CQRS.Infrastructure.pdb
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\obj\Debug\CQRS.Domain.csprojResolveAssemblyReference.cache
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\obj\Debug\CQRS.Domain.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.Domain\obj\Debug\CQRS.Domain.pdb

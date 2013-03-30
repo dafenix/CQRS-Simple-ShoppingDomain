@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="CQRS.WPFUI.Views.CreateProduct"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+    <StackPanel>
+        <DockPanel LastChildFill="True" Margin="5">
+            <TextBlock Text="Name" Foreground="White" Width="80" />
+            <TextBox Height="24" Text="{Binding Path=Name,UpdateSourceTrigger=PropertyChanged}" />
+        </DockPanel>
+        <DockPanel LastChildFill="True" Margin="5">
+            <TextBlock Text="Preis" Foreground="White" Width="80" />
+            <TextBox Height="24" Text="{Binding Path=Price,UpdateSourceTrigger=PropertyChanged}" />
+        </DockPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,5">
+            <Button Content="Erstellen" Command="{Binding Path=CreateProductCommand}" Width="75" />
+            <Button Content="Abbrechen" Width="76" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

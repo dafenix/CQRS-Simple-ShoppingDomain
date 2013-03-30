@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF6583C5-68DF-4C45-878A-7230D23034C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CQRS.ReadModel</RootNamespace>
+    <AssemblyName>CQRS.ReadModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerDenormalizer.cs" />
+    <Compile Include="Dto\CustomerDto.cs" />
+    <Compile Include="Reporting\IReportingRepository.cs" />
+    <Compile Include="Reporting\CommandBuilder\ISqlCreateBuilder.cs" />
+    <Compile Include="Reporting\CommandBuilder\ISqlDeleteBuilder.cs" />
+    <Compile Include="Reporting\CommandBuilder\ISqlInsertBuilder.cs" />
+    <Compile Include="Reporting\CommandBuilder\ISqlSelectBuilder.cs" />
+    <Compile Include="Reporting\CommandBuilder\ISqlUpdateBuilder.cs" />
+    <Compile Include="ProductDenormalizer.cs" />
+    <Compile Include="Dto\ShoppingCardDto.cs" />
+    <Compile Include="Dto\ProductDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCardDenormalizer.cs" />
+    <Compile Include="Reporting\MySqlCreateBuilder.cs" />
+    <Compile Include="Reporting\MySqlDeleteBuilder.cs" />
+    <Compile Include="Reporting\MySqlInsertBuilder.cs" />
+    <Compile Include="Repository\MySqlReportingRepository.cs" />
+    <Compile Include="Reporting\MySqlSelectBuilder.cs" />
+    <Compile Include="Reporting\MySqlUpdateBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS.Domain\CQRS.Domain.csproj">
+      <Project>{20B2ADA2-97E4-4D21-A216-5136160B2EBB}</Project>
+      <Name>CQRS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQRS.Infrastructure\CQRS.Infrastructure.csproj">
+      <Project>{6305A878-7943-4939-9AA2-6AE811F587E5}</Project>
+      <Name>CQRS.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Script\CreateTables.txt" />
+    <Content Include="Script\InsertData.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

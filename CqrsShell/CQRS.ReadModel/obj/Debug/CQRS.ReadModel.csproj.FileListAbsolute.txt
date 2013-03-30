@@ -1,0 +1,11 @@
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\CQRS.ReadModel.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\CQRS.ReadModel.pdb
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\CQRS.Domain.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\CQRS.Infrastructure.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\CQRS.Domain.pdb
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\CQRS.Infrastructure.pdb
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\obj\Debug\CQRS.ReadModel.csprojResolveAssemblyReference.cache
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\obj\Debug\CQRS.ReadModel.dll
+D:\Dev\Net\CQRS\Alex\X\CqrsShell\CQRS.ReadModel\obj\Debug\CQRS.ReadModel.pdb

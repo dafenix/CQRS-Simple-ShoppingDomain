@@ -1,0 +1,90 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Erstellungszeit: 30. Mrz 2013 um 21:23
+-- Server Version: 5.5.27
+-- PHP-Version: 5.4.7
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Datenbank: `mycqrstest`
+--
+CREATE DATABASE `mycqrstest` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `mycqrstest`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `customer`
+--
+
+CREATE TABLE IF NOT EXISTS `customer` (
+  `id` varchar(255) NOT NULL,
+  `firstname` text NOT NULL,
+  `lastname` text NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `events`
+--
+
+CREATE TABLE IF NOT EXISTS `events` (
+  `Id` varchar(255) NOT NULL,
+  `TimeStamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `Name` text NOT NULL,
+  `EventSourceId` varchar(255) NOT NULL,
+  `Sequence` bigint(20) DEFAULT NULL,
+  `Data` text NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `productdto`
+--
+
+CREATE TABLE IF NOT EXISTS `productdto` (
+  `id` varchar(255) NOT NULL,
+  `name` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `shoppingcarddto`
+--
+
+CREATE TABLE IF NOT EXISTS `shoppingcarddto` (
+  `idvisitor` varchar(255) NOT NULL,
+  `idproduct` varchar(255) NOT NULL,
+  `name` text NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` decimal(10,0) NOT NULL,
+  `priceoverall` decimal(10,0) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`idvisitor`,`idproduct`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `snapshots`
+--
+
+CREATE TABLE IF NOT EXISTS `snapshots` (
+  `EventSourceId` char(36) NOT NULL,
+  `Type` varchar(255) NOT NULL,
+  `TimeStamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `EventSourceSequence` bigint(20) NOT NULL,
+  `Data` varbinary(4000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

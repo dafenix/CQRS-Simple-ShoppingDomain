@@ -30,5 +30,35 @@
         <text>Anwendungsfall%0A%20%0AUnser%20Besucher%20m%F6chte%20Artikel%20zu%20seiner%20Bestellliste%20hinzuf%FCgen%2C%20um%20diese%20ggf.%20sp%E4ter%20zu%20bestellen.%0AUnser%20Besucher%20m%F6chte%20die%20Anzahl%20der%20Artikel%20im%20nachhinein%20%E4ndern%20k%F6nnen.%0AUnser%20Besucher%20m%F6chte%20Artikel%20von%20seiner%20Bestellliste%20entfernen%20k%F6nnen%0AUnser%20Besucher%20m%F6chte%20seine%20Bestellliste%20speichern%20k%F6nnen.</text>
       </controlProperties>
     </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::TitleWindow" x="182" y="24" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Shoppingcard</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="204" y="67" w="69" h="-1" measuredW="46" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Product</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Label" x="260" y="67" w="69" h="-1" measuredW="52" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Quantity</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Label" x="321" y="67" w="69" h="-1" measuredW="82" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Price%20per%20Unit</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::StickyNote" x="508" y="52" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Eine%20Bestellung%20hat%20mehrere%20Positionen</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::StickyNote" x="698" y="52" w="405" h="333" measuredW="109" measuredH="123" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Anwendungsfall%0A%20%0AUnser%20Besucher%20ist%20solange%20Besucher%20wie%20er%20sich%20Artikel%20anschaut.%20Sobald%20er%20Artikel%20in%20seinen%20Warenkorb%20legen%20will%2C%20muss%20er%20sich%20im%20System%20anmelden.%20Fortan%20ist%20er%20kein%20Besucher%20mehr%2C%20sondern%20Kunde.%20%0AUnser%20Kunde%20m%F6chte%20Artikel%20zu%20seiner%20Bestellliste%20hinzuf%FCgen%2C%20um%20diese%20ggf.%20sp%E4ter%20zu%20bestellen.%0AUnser%20Kunde%20m%F6chte%20die%20Anzahl%20der%20Artikel%20im%20nachhinein%20%E4ndern%20k%F6nnen.%0AUnser%20Kunde%20m%F6chte%20Artikel%20von%20seiner%20Bestellliste%20entfernen%20k%F6nnen%0AUnser%20Kunde%20m%F6chte%20seine%20Bestellliste%20speichern%20k%F6nnen.</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
